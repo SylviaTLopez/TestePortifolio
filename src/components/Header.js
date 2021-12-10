@@ -1,14 +1,18 @@
 import React from 'react'
+import FWorks from './FWorks'
 import Menu from './Menu'
 import Posts from './Posts'
 import Resume from './Resume'
+import Footer from './Footer'
 
 import {
   HeaderContainer,
   Container,
   ContainerMenu,
   ResumeContainer,
-  PostsContainer
+  PostsContainer,
+  FWorksContainer,
+  FooterContainer
 } from './styles'
 
 export default function Header() {
@@ -29,6 +33,14 @@ export default function Header() {
       <PostsContainer>
         <Posts />
       </PostsContainer>
+
+      <FWorksContainer>
+        <FWorks />
+      </FWorksContainer>
+
+      <FooterContainer>
+        <Footer />
+      </FooterContainer>
     </>
   )
 }
